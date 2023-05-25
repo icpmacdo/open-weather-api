@@ -8,12 +8,10 @@ const Weather: React.FC = () => {
   useEffect(() => {
     const fetchWeatherData = async () => {
       const apiKey = process.env.NEXT_PUBLIC_API_KEY;
-      console.log(apiKey)
       const url = `https://api.openweathermap.org/data/2.5/weather?q=ottawa&appid=${apiKey}`;
       try {
         const response = await axios.get(url);
         setWeatherData(response.data);
-        console.log(response.data)
       } catch (error) {
         console.error('Error fetching weather data:', error);
       }
