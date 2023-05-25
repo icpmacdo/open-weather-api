@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const Weather = () => {
-  const [weatherData, setWeatherData] = useState(null);
+const Weather: React.FC = () => {
+  const [weatherData, setWeatherData] = useState<any>(null);
 
   useEffect(() => {
     const fetchWeatherData = async () => {
