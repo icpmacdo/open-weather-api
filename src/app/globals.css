@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+#searchInput {
+    border: none;
+    border-bottom: 1px solid #c32e2e;
+    outline: none;
+  }
+  
